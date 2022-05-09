@@ -14,6 +14,26 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-    
+    <main>
+        <section class="swiper-wrapper">
+            <article class="swiper-slide">1</article>
+            <article class="swiper-slide">2</article>
+            <article class="swiper-slide">3</article>
+            <article class="swiper-slide">4</article>
+            <article class="swiper-slide">5</article>
+        </section>
+    </main>
+
+    <script>
+        const swiper = new Swiper("main", {
+            speed: 500, // 스와이프할 때 넘어가는 속도
+            loop: true, // 스와이프 순환
+            direction: 'horizontal', //가로로 넘기기 (vertical은 세로로 스와이프)
+            grabCursor: true, 
+            slidesPerView: 2, // 한 번에 보이는 슬라이드 개수
+            spaceBetween: 15, // 슬라이드 사이 간격
+            centeredSlides: true, // 활성화 패널을 항상 가로 가운데 배치
+        });
+    </script>
 </body>
 </html>
